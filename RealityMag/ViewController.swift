@@ -33,11 +33,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
+        // Create a session configuration to track image
+        let configuration = ARImageTrackingConfiguration()
+        
+        //Gain access to the images in the assets folder to tell AR to track those images
+        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) {
+            
+            //Tell AR to track the images we have in the assets folder
+            configuration.trackingImages = imageToTrack
+            
+            //Set number of images to track t the same time
+            configuration.maximumNumberOfTrackedImages = 1
+            
+            // Run the view's session
+            sceneView.session.run(configuration)
 
-        // Run the view's session
-        sceneView.session.run(configuration)
+        }
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -49,27 +61,5 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     // MARK: - ARSCNViewDelegate
     
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
-     
-        return node
-    }
-*/
-    
-    func session(_ session: ARSession, didFailWithError error: Error) {
-        // Present an error message to the user
-        
-    }
-    
-    func sessionWasInterrupted(_ session: ARSession) {
-        // Inform the user that the session has been interrupted, for example, by presenting an overlay
-        
-    }
-    
-    func sessionInterruptionEnded(_ session: ARSession) {
-        // Reset tracking and/or remove existing anchors if consistent tracking is required
-        
-    }
+
 }

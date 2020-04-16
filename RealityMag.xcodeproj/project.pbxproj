@@ -13,6 +13,7 @@
 		04A67D182448719A0006BEDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A67D162448719A0006BEDC /* Main.storyboard */; };
 		04A67D1A244871A10006BEDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A67D19244871A10006BEDC /* Assets.xcassets */; };
 		04A67D1D244871A10006BEDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A67D1B244871A10006BEDC /* LaunchScreen.storyboard */; };
+		04A67D252448784E0006BEDC /* cars.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04A67D242448784E0006BEDC /* cars.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		04A67D19244871A10006BEDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A67D1C244871A10006BEDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A67D1E244871A10006BEDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A67D242448784E0006BEDC /* cars.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cars.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		04A67D0F2448719A0006BEDC /* RealityMag */ = {
 			isa = PBXGroup;
 			children = (
+				04A67D242448784E0006BEDC /* cars.mp4 */,
 				04A67D102448719A0006BEDC /* AppDelegate.swift */,
 				04A67D122448719A0006BEDC /* art.scnassets */,
 				04A67D142448719A0006BEDC /* ViewController.swift */,
@@ -128,6 +131,7 @@
 				04A67D132448719A0006BEDC /* art.scnassets in Resources */,
 				04A67D1D244871A10006BEDC /* LaunchScreen.storyboard in Resources */,
 				04A67D1A244871A10006BEDC /* Assets.xcassets in Resources */,
+				04A67D252448784E0006BEDC /* cars.mp4 in Resources */,
 				04A67D182448719A0006BEDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
